@@ -1,12 +1,26 @@
 import sys, math
-for raw in sys.stdin:
-    line = raw.rstrip("\n").strip()
-    if not line: continue
-    x_str, w_str, b_str = line.split(";")
-    x = list(map(float, x_str.split(",")))
-    w = list(map(float, w_str.split(",")))
-    b = float(b_str)
 
-    z = sum(wi * xi for wi, xi in zip(w, x)) + b
-    sigmoid = 1.0 / (1.0 + math.exp(-z))
-    print(round(sigmoid, 4))
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
+
+# Layer forward: given INPUT, WEIGHTS (M*N), BIAS (M), output sigmoid(W @ x + b)
+data = sys.stdin.read().splitlines()
+inp = wts = bias = []
+M = N = 0
+for line in data:
+    if line.startswith("INPUT "):
+        inp = list(map(float, line[6:].split(",")))
+    elif line.startswith("WEIGHTS "):
+        wts = list(map(float, line[8:].split(",")))
+    elif line.startswith("BIAS "):
+        bias = list(map(float, line[5:].split(",")))
+    elif line.startswith("M "):
+        parts = line.split()
+        M = int(parts[1]); N = int(parts[3]) if len(parts) > 3 else len(inp)
+
+if M and inp and wts and bias:
+    out = []
+    for i in range(M):
+        z = sum(wts[i * N + j] * inp[j] for j in range(N)) + bias[i]
+        out.append(f"{sigmoid(z):.4f}")
+    print(",".join(out))
