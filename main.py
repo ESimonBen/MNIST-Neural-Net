@@ -16,7 +16,8 @@ for line in data:
         bias = list(map(float, line[5:].split(",")))
     elif line.startswith("M "):
         parts = line.split()
-        M = int(parts[1]); N = int(parts[3]) if len(parts) > 3 else len(inp)
+        M = int(parts[1])
+        N = int(parts[3]) if len(parts) > 3 else len(inp)
 
 if M and inp and wts and bias:
     out = []
