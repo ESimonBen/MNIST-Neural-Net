@@ -1,0 +1,110 @@
+{
+  "course": "build-neural-network",
+  "language": "python",
+  "language_id": 71,
+  "entrypoint": "main.py",
+  "version": 1,
+  "content_hash": "e3e7984eedef199e",
+  "lessons": [
+    {
+      "slug": "what-is-nn",
+      "tests_hash": "fda39f5e2249"
+    },
+    {
+      "slug": "neurons",
+      "tests_hash": "56bf62c5fdd6"
+    },
+    {
+      "slug": "layers",
+      "tests_hash": ""
+    },
+    {
+      "slug": "loss-function",
+      "tests_hash": "3a4d72dc4f98"
+    },
+    {
+      "slug": "backprop",
+      "tests_hash": "e3e960b6e65b"
+    },
+    {
+      "slug": "gradient-descent",
+      "tests_hash": "4ef40cfa0b7e"
+    },
+    {
+      "slug": "training-loop",
+      "tests_hash": ""
+    },
+    {
+      "slug": "mnist",
+      "tests_hash": "42a46363508c"
+    },
+    {
+      "slug": "frameworks",
+      "tests_hash": "6af9f50bd332"
+    },
+    {
+      "slug": "production-nn",
+      "tests_hash": ""
+    },
+    {
+      "slug": "autograd-scalar",
+      "tests_hash": "8e17f22a4f2d"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "tests_hash": "9230f5ad9c12"
+    },
+    {
+      "slug": "momentum-sgd",
+      "tests_hash": "d7bcf7e608e5"
+    },
+    {
+      "slug": "adam-optimizer",
+      "tests_hash": "6db52484b277"
+    },
+    {
+      "slug": "l2-weight-decay",
+      "tests_hash": "35d180439562"
+    },
+    {
+      "slug": "dropout",
+      "tests_hash": "9f7817eea1c1"
+    },
+    {
+      "slug": "xavier-kaiming-init",
+      "tests_hash": "53bd981dc784"
+    },
+    {
+      "slug": "batch-norm",
+      "tests_hash": "efe137232156"
+    },
+    {
+      "slug": "layer-norm",
+      "tests_hash": "ee5ba5cca24a"
+    },
+    {
+      "slug": "conv2d",
+      "tests_hash": "384aa09b2f01"
+    },
+    {
+      "slug": "max-pooling",
+      "tests_hash": "12c4a954bfa3"
+    },
+    {
+      "slug": "embeddings-positional",
+      "tests_hash": "57ed9ff9aedb"
+    },
+    {
+      "slug": "rnn-cell",
+      "tests_hash": "6882a0f6c795"
+    },
+    {
+      "slug": "attention-qkv",
+      "tests_hash": "4962430189e3"
+    },
+    {
+      "slug": "transformer-block",
+      "tests_hash": "704880af1391"
+    }
+  ]
+}
